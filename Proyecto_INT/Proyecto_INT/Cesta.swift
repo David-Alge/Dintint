@@ -40,7 +40,7 @@ class Cesta: UITableViewController {
             action, view, completion in self.arrayDatos.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
-        optBorrar.image = UIImage(systemName: "trash")
+        optBorrar.image = UIImage(systemName: "info")
         optBorrar.backgroundColor = UIColor.red
         
         

@@ -21,6 +21,7 @@
 		83FC1D16294B50AE00C7D953 /* ZonaElectrodomestico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC1D15294B50AE00C7D953 /* ZonaElectrodomestico.swift */; };
 		83FC1D18294B531000C7D953 /* ZonaCompo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC1D17294B530F00C7D953 /* ZonaCompo.swift */; };
 		83FC1D1A294B564300C7D953 /* ZonaPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC1D19294B564300C7D953 /* ZonaPC.swift */; };
+		87199706296EDAE9001B27BB /* ZonaComponentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87199705296EDAE9001B27BB /* ZonaComponentes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		83FC1D15294B50AE00C7D953 /* ZonaElectrodomestico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaElectrodomestico.swift; sourceTree = "<group>"; };
 		83FC1D17294B530F00C7D953 /* ZonaCompo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaCompo.swift; sourceTree = "<group>"; };
 		83FC1D19294B564300C7D953 /* ZonaPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaPC.swift; sourceTree = "<group>"; };
+		87199705296EDAE9001B27BB /* ZonaComponentes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaComponentes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				83002936291D18B6009E6B3D /* Cesta.swift */,
 				83E9847129376C9600AC7F34 /* ZonaMovil.swift */,
 				8321DBEF291260B700D4633A /* Main.storyboard */,
+				87199705296EDAE9001B27BB /* ZonaComponentes.swift */,
 				83FC1D17294B530F00C7D953 /* ZonaCompo.swift */,
 				83FC1D15294B50AE00C7D953 /* ZonaElectrodomestico.swift */,
 				83FC1D13294B4D4800C7D953 /* ZonaAccesorios.swift */,
@@ -169,6 +172,7 @@
 				83FC1D16294B50AE00C7D953 /* ZonaElectrodomestico.swift in Sources */,
 				83FC1D14294B4D4800C7D953 /* ZonaAccesorios.swift in Sources */,
 				8321DBEA291260B700D4633A /* AppDelegate.swift in Sources */,
+				87199706296EDAE9001B27BB /* ZonaComponentes.swift in Sources */,
 				83002937291D18B6009E6B3D /* Cesta.swift in Sources */,
 				8321DBEC291260B700D4633A /* SceneDelegate.swift in Sources */,
 				8321DBFE29127B1C00D4633A /* Login.swift in Sources */,
