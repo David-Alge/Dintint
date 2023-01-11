@@ -8,6 +8,8 @@
 import UIKit
 
 class ZonaComponentes: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var txtAniadir: UITextField!
     var arrayDatos = ["Componentes1", "Componentes2", "Componentes3", "Componentes4"]
     
     override func viewDidLoad() {
@@ -42,6 +44,11 @@ class ZonaComponentes: UIViewController, UITableViewDelegate, UITableViewDataSou
         return config
     }
     
+    @IBAction func btnAniadir(_ sender: Any) {
+        arrayDatos.insert(txtAniadir.text!, at: 0)
+        let indexPath = IndexPath(row:0, section: 0)
+        tableView.insertRows(at: [indexPath], with: .fade)
+    }
     
     
 
