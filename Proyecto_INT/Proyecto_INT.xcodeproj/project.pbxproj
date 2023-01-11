@@ -56,7 +56,6 @@
 		8321DBDD291260B700D4633A = {
 			isa = PBXGroup;
 			children = (
-				83FC1D19294B564300C7D953 /* ZonaPC.swift */,
 				8321DBE8291260B700D4633A /* Proyecto_INT */,
 				8321DBE7291260B700D4633A /* Products */,
 			);
@@ -73,6 +72,7 @@
 		8321DBE8291260B700D4633A /* Proyecto_INT */ = {
 			isa = PBXGroup;
 			children = (
+				83FC1D19294B564300C7D953 /* ZonaPC.swift */,
 				8321DBE9291260B700D4633A /* AppDelegate.swift */,
 				8321DBEB291260B700D4633A /* SceneDelegate.swift */,
 				8321DBFD29127B1C00D4633A /* Login.swift */,
