@@ -13,7 +13,7 @@
             <objects>
                 <navigationController id="FYc-2y-z4v" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3fm-Ii-5pB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -29,7 +29,7 @@
             <objects>
                 <viewController id="2lf-c2-Gae" customClass="Login" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wmu-b1-MCA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Iniciar Sesion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smq-Is-b3n">
@@ -88,7 +88,7 @@
             <objects>
                 <viewController id="443-GC-pyH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qUs-hT-fc8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tu Perfil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZR-Xf-SOo">
@@ -233,7 +233,7 @@
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="3nI-C1-Xac" kind="push" id="Aj9-Dx-MY3"/>
+                                    <segue destination="7ND-PO-3NL" kind="push" id="qBA-c1-kTD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSS-7O-hkC">
@@ -295,60 +295,6 @@
             </objects>
             <point key="canvasLocation" x="-3875" y="-1041"/>
         </scene>
-        <!--Zona Compo-->
-        <scene sceneID="pR2-Mh-YSp">
-            <objects>
-                <tableViewController id="3nI-C1-Xac" customClass="ZonaCompo" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="i6H-Kc-sJg">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="miCeldaCompo" rowHeight="148" id="wda-o4-D2V" customClass="CeldaCompo" customModule="Proyecto_INT" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="148"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wda-o4-D2V" id="cdP-jU-sZW" customClass="CeldaAccesorios" customModule="Proyecto_INT" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="148"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOq-Zd-9kp">
-                                            <rect key="frame" x="296" y="93" width="80" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="tinted" title="Añadir"/>
-                                        </button>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-k8-nua">
-                                            <rect key="frame" x="20" y="11" width="133" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Componente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnL-ga-5OC">
-                                            <rect key="frame" x="158" y="11" width="135" height="42"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <accessibility key="accessibilityConfiguration" identifier="miCeldaMovil"/>
-                                <connections>
-                                    <outlet property="miBoton" destination="BOq-Zd-9kp" id="TwI-zb-5Ro"/>
-                                    <outlet property="miImagen" destination="pf8-k8-nua" id="yjS-ID-zIH"/>
-                                    <outlet property="miLabel" destination="BnL-ga-5OC" id="M1h-fE-i7q"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="3nI-C1-Xac" id="cwR-S1-xF9"/>
-                            <outlet property="delegate" destination="3nI-C1-Xac" id="u9X-te-h7E"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="WRf-ja-LPr"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdo-jm-AOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1668" y="-614"/>
-        </scene>
         <!--Zona Componentes-->
         <scene sceneID="x35-kx-eMZ">
             <objects>
@@ -365,7 +311,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="miCeldaComponente" rowHeight="147" id="ikM-DX-Ogc" customClass="CeldaComponente" customModule="Proyecto_INT" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="147"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ikM-DX-Ogc" id="1dz-5C-95x" customClass="CeldaAccesorios" customModule="Proyecto_INT" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ikM-DX-Ogc" id="1dz-5C-95x" customClass="CeldaComponente" customModule="Proyecto_INT" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -380,6 +326,15 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPm-Y5-I6P">
+                                                    <rect key="frame" x="310" y="94" width="101" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
+                                                    <connections>
+                                                        <segue destination="2j6-gA-Uxg" kind="push" id="7E0-T5-l7a"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -415,6 +370,7 @@
                         <viewLayoutGuide key="safeArea" id="34d-qL-fT6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9IP-OO-hRU"/>
                     <connections>
                         <outlet property="tableView" destination="eG5-su-icF" id="ar5-tj-5Tn"/>
                         <outlet property="txtAniadir" destination="yF1-J1-V3K" id="AOd-zy-WtI"/>
@@ -422,7 +378,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQk-Ei-sdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-960.28037383177559" y="-614.25485961123115"/>
+            <point key="canvasLocation" x="-1668" y="-614"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8ae-VX-LJH">
+            <objects>
+                <viewController id="2j6-gA-Uxg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yyt-AZ-VZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="En esta ventana se van a ver los detalles del producot seleccionado." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZI-NX-yKo">
+                                <rect key="frame" x="74" y="121" width="281" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eed-p8-3mF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HJg-pS-rcS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUs-U8-tal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.36448598130841" y="-614.25485961123115"/>
         </scene>
         <!--Zona Movil-->
         <scene sceneID="XS6-to-5R1">
@@ -679,15 +660,15 @@
             <objects>
                 <tableViewController id="kv4-d8-ggl" customClass="ZonaPC" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="b4j-4H-s7c">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="miCeldaPC" rowHeight="148" id="Lh0-Tb-Lmk" customClass="CeldaPC" customModule="Proyecto_INT" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="148"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="148"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lh0-Tb-Lmk" id="3UM-f4-vO9" customClass="CeldaPC" customModule="Proyecto_INT" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="148"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIt-Nf-M0O">

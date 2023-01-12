@@ -7,14 +7,15 @@
 
 import UIKit
 
-class ZonaComponentes: UIViewController {
+class ZonaComponentes: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtAniadir: UITextField!
     var arrayDatos = ["Componentes1", "Componentes2", "Componentes3", "Componentes4"]
     
     override func viewDidLoad() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -24,7 +25,7 @@ class ZonaComponentes: UIViewController {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "miCeldaCompo", for: indexPath) as! CeldaComponente
+        let cell = tableView.dequeueReusableCell(withIdentifier: "miCeldaComponente", for: indexPath) as! CeldaComponente
 
         cell.miLabel.text = arrayDatos [indexPath.row]
         cell.miImagen.image = UIImage(named:"compo")
@@ -35,14 +36,7 @@ class ZonaComponentes: UIViewController {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150.00
     }
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let optInfo = UIContextualAction(style: .normal, title: "Descripción"){ action, view, completion in
-        }
-        optInfo.image = UIImage(systemName: "info")
-        let config = UISwipeActionsConfiguration(actions: [optInfo])
-        config.performsFirstActionWithFullSwipe = false
-        return config
-    }
+
     
     @IBAction func btnAniadir(_ sender: Any) {
         arrayDatos.insert(txtAniadir.text!, at: 0)
