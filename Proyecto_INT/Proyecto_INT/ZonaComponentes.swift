@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ZonaComponentes: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ZonaComponentes: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtAniadir: UITextField!
     var arrayDatos = ["Componentes1", "Componentes2", "Componentes3", "Componentes4"]
@@ -24,7 +24,7 @@ class ZonaComponentes: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "miCeldaCompo", for: indexPath) as! CeldaCompo
+        let cell = tableView.dequeueReusableCell(withIdentifier: "miCeldaCompo", for: indexPath) as! CeldaComponente
 
         cell.miLabel.text = arrayDatos [indexPath.row]
         cell.miImagen.image = UIImage(named:"compo")
@@ -33,7 +33,7 @@ class ZonaComponentes: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50.00
+        return 150.00
     }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let optInfo = UIContextualAction(style: .normal, title: "Descripción"){ action, view, completion in
@@ -55,5 +55,6 @@ class ZonaComponentes: UIViewController, UITableViewDelegate, UITableViewDataSou
 
 }
 class CeldaComponente: UITableViewCell {
-    
+    @IBOutlet weak var miImagen: UIImageView!
+    @IBOutlet weak var miLabel: UILabel!
 }
