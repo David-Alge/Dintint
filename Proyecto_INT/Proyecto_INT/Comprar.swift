@@ -23,21 +23,20 @@ class Comprar: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
         let vistaMovil = miStoryboard.instantiateViewController(withIdentifier: "ZonaMovil") as! ZonaMovil
         vistaMovil.modalPresentationStyle = .fullScreen
         vistaMovil.modalTransitionStyle = .flipHorizontal
-        present(vistaMovil, animated: true)
         
+        self.navigationController?.pushViewController(vistaMovil, animated: true)
+        
+        let vistaMovil = miStoryboard.instantiateViewController(withIdentifier: "ZonaMovil") as! ZonaMovil
+        vistaMovil.modalPresentationStyle = .fullScreen
+        vistaMovil.modalTransitionStyle = .flipHorizontal
+        
+        self.navigationController?.pushViewController(vistaMovil, animated: true)
         
         
         
         
         
     }
-    
-    
-    
-    
-    
-    
-    
     
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
