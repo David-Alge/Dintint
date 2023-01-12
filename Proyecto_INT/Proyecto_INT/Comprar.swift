@@ -18,6 +18,19 @@ class Comprar: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
 
     let arrayVistas = ["Moviles", "Accesorios Moviles", "Ordenadores", "Componentes", "Electrodomesticos"]
     
+    @IBAction func irVista(_ sender: Any) {
+        let miStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vistaMovil = miStoryboard.instantiateViewController(withIdentifier: "ZonaMovil") as! ZonaMovil
+        vistaMovil.modalPresentationStyle = .fullScreen
+        vistaMovil.modalTransitionStyle = .flipHorizontal
+        present(vistaMovil, animated: true)
+        
+        
+        
+        
+        
+        
+    }
     
     
     
