@@ -14,23 +14,20 @@ class Comprar: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var pickerVista: UIPickerView!
     
 
     let arrayVistas = ["Moviles", "Accesorios Moviles", "Ordenadores", "Componentes", "Electrodomesticos"]
     
     @IBAction func irVista(_ sender: Any) {
         let miStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vistaMovil = miStoryboard.instantiateViewController(withIdentifier: "ZonaMovil") as! ZonaMovil
-        vistaMovil.modalPresentationStyle = .fullScreen
-        vistaMovil.modalTransitionStyle = .flipHorizontal
         
-        self.navigationController?.pushViewController(vistaMovil, animated: true)
+        let view = miStoryboard.instantiateViewController(identifier: arrayVistas[pickerVista.selectedRow(inComponent: 0)])
         
-        let vistaMovil = miStoryboard.instantiateViewController(withIdentifier: "ZonaMovil") as! ZonaMovil
-        vistaMovil.modalPresentationStyle = .fullScreen
-        vistaMovil.modalTransitionStyle = .flipHorizontal
+        view.modalPresentationStyle = .fullScreen
+        view.modalTransitionStyle = .flipHorizontal
         
-        self.navigationController?.pushViewController(vistaMovil, animated: true)
+        self.navigationController?.pushViewController(view, animated: true)
         
         
         
