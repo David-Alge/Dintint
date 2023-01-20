@@ -80,6 +80,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12W-35-zXd">
+                                <rect key="frame" x="99" y="790" width="217" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Recordar Credenciales"/>
+                                <connections>
+                                    <action selector="Recu:" destination="2lf-c2-Gae" eventType="touchUpInside" id="9CN-pW-HFq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b8X-vc-nZX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
