@@ -17,7 +17,7 @@ class Comprar: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
     @IBOutlet weak var pickerVista: UIPickerView!
     
 
-    let arrayVistas = ["Moviles", "Accesorios Moviles", "Ordenadores", "Componentes", "Electrodomesticos"]
+    let arrayVistas = ["Telefono", "Accesorios Moviles", "Ordenadores", "Componentes", "Electrodomesticos"]
     
     @IBAction func irVista(_ sender: Any) {
         let miStoryboard = UIStoryboard(name: "Main", bundle: nil)

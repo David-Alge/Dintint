@@ -18,12 +18,10 @@
 		8321DBFE29127B1C00D4633A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321DBFD29127B1C00D4633A /* Login.swift */; };
 		8321DC00291289D500D4633A /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321DBFF291289D500D4633A /* Registro.swift */; };
 		83DD55C4296FF958007998C2 /* Comprar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD55C3296FF958007998C2 /* Comprar.swift */; };
-		83E9847229376C9600AC7F34 /* ZonaMovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E9847129376C9600AC7F34 /* ZonaMovil.swift */; };
 		83FC1D14294B4D4800C7D953 /* ZonaAccesorios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC1D13294B4D4800C7D953 /* ZonaAccesorios.swift */; };
 		83FC1D16294B50AE00C7D953 /* ZonaElectrodomestico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC1D15294B50AE00C7D953 /* ZonaElectrodomestico.swift */; };
-		83FC1D18294B531000C7D953 /* ZonaCompo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC1D17294B530F00C7D953 /* ZonaCompo.swift */; };
-		83FC1D1A294B564300C7D953 /* ZonaPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC1D19294B564300C7D953 /* ZonaPC.swift */; };
 		87199706296EDAE9001B27BB /* ZonaComponentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87199705296EDAE9001B27BB /* ZonaComponentes.swift */; };
+		87A8F93B297AA4B300412A9F /* ZonaTelefono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8F93A297AA4B300412A9F /* ZonaTelefono.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,12 +38,10 @@
 		8321DBFD29127B1C00D4633A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		8321DBFF291289D500D4633A /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
 		83DD55C3296FF958007998C2 /* Comprar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comprar.swift; sourceTree = "<group>"; };
-		83E9847129376C9600AC7F34 /* ZonaMovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaMovil.swift; sourceTree = "<group>"; };
 		83FC1D13294B4D4800C7D953 /* ZonaAccesorios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaAccesorios.swift; sourceTree = "<group>"; };
 		83FC1D15294B50AE00C7D953 /* ZonaElectrodomestico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaElectrodomestico.swift; sourceTree = "<group>"; };
-		83FC1D17294B530F00C7D953 /* ZonaCompo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaCompo.swift; sourceTree = "<group>"; };
-		83FC1D19294B564300C7D953 /* ZonaPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaPC.swift; sourceTree = "<group>"; };
 		87199705296EDAE9001B27BB /* ZonaComponentes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaComponentes.swift; sourceTree = "<group>"; };
+		87A8F93A297AA4B300412A9F /* ZonaTelefono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaTelefono.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,19 +74,17 @@
 		8321DBE8291260B700D4633A /* Proyecto_INT */ = {
 			isa = PBXGroup;
 			children = (
-				83FC1D19294B564300C7D953 /* ZonaPC.swift */,
 				8313010F2979361B00E4D47C /* ZonaPCVC.swift */,
 				8321DBE9291260B700D4633A /* AppDelegate.swift */,
 				8321DBEB291260B700D4633A /* SceneDelegate.swift */,
 				8321DBEF291260B700D4633A /* Main.storyboard */,
+				87A8F93A297AA4B300412A9F /* ZonaTelefono.swift */,
 				8321DBFD29127B1C00D4633A /* Login.swift */,
 				83064C582975649F004FBFE3 /* TabBarController.swift */,
 				8321DBFF291289D500D4633A /* Registro.swift */,
 				83002936291D18B6009E6B3D /* Cesta.swift */,
-				83E9847129376C9600AC7F34 /* ZonaMovil.swift */,
 				83DD55C3296FF958007998C2 /* Comprar.swift */,
 				87199705296EDAE9001B27BB /* ZonaComponentes.swift */,
-				83FC1D17294B530F00C7D953 /* ZonaCompo.swift */,
 				83FC1D15294B50AE00C7D953 /* ZonaElectrodomestico.swift */,
 				83FC1D13294B4D4800C7D953 /* ZonaAccesorios.swift */,
 				8321DBF2291260BA00D4633A /* Assets.xcassets */,
@@ -171,11 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83FC1D18294B531000C7D953 /* ZonaCompo.swift in Sources */,
+				87A8F93B297AA4B300412A9F /* ZonaTelefono.swift in Sources */,
 				83064C592975649F004FBFE3 /* TabBarController.swift in Sources */,
 				8321DC00291289D500D4633A /* Registro.swift in Sources */,
-				83FC1D1A294B564300C7D953 /* ZonaPC.swift in Sources */,
-				83E9847229376C9600AC7F34 /* ZonaMovil.swift in Sources */,
 				831301102979361B00E4D47C /* ZonaPCVC.swift in Sources */,
 				83FC1D16294B50AE00C7D953 /* ZonaElectrodomestico.swift in Sources */,
 				83FC1D14294B4D4800C7D953 /* ZonaAccesorios.swift in Sources */,
