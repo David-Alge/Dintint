@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Comprar: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
+class Almacen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +17,7 @@ class Comprar: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
     @IBOutlet weak var pickerVista: UIPickerView!
     
 
-    let arrayVistas = ["Telefono", "Accesorios Moviles", "Ordenadores", "Componentes", "Electrodomesticos"]
+    let arrayVistas = ["Telefono", "Complementos", "Ordenadores", "Componentes", "Electro"]
     
     @IBAction func irVista(_ sender: Any) {
         let miStoryboard = UIStoryboard(name: "Main", bundle: nil)

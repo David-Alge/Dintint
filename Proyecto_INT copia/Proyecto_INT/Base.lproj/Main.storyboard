@@ -84,7 +84,7 @@
                                 <rect key="frame" x="99" y="790" width="217" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Recordar Credenciales"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Recordar usuario"/>
                                 <connections>
                                     <action selector="Recu:" destination="2lf-c2-Gae" eventType="touchUpInside" id="9CN-pW-HFq"/>
                                 </connections>
@@ -217,7 +217,7 @@
         <!--Comprar-->
         <scene sceneID="QNz-pm-ZPA">
             <objects>
-                <viewController storyboardIdentifier="Comprar" id="S6j-f1-Q7w" customClass="Comprar" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Comprar" id="S6j-f1-Q7w" customClass="Almacen" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gut-JH-hZl">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,6 +310,9 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
+                                                    <connections>
+                                                        <segue destination="2j6-gA-Uxg" kind="push" id="tHE-Yh-HI5"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -340,7 +343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pN-Yx-8y1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1633.1775700934579" y="100.43196544276459"/>
+            <point key="canvasLocation" x="-2877" y="-1247"/>
         </scene>
         <!--Zona Telefono-->
         <scene sceneID="a0J-c1-JFJ">
@@ -391,6 +394,9 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
+                                                    <connections>
+                                                        <segue destination="2j6-gA-Uxg" kind="push" id="HsD-JO-3Vw"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -421,7 +427,175 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPo-BG-20J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-890.18691588785043" y="100.43196544276459"/>
+            <point key="canvasLocation" x="-1835" y="-1042"/>
+        </scene>
+        <!--Zona Complementos-->
+        <scene sceneID="PAE-M5-sPI">
+            <objects>
+                <viewController storyboardIdentifier="Complementos" id="iMl-ya-3xt" customClass="ZonaComplementos" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fmk-5C-44K">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Añade nuevos complementos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-7c-JG9">
+                                <rect key="frame" x="101" y="44" width="226" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nuevo complemento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kxc-yJ-AW9">
+                                <rect key="frame" x="101" y="73" width="226" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKU-HB-s1U">
+                                <rect key="frame" x="176" y="115" width="77" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Añadir"/>
+                                <connections>
+                                    <action selector="btnAniadir:" destination="iMl-ya-3xt" eventType="touchUpInside" id="nOe-1U-Ga2"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hSy-EL-qjV">
+                                <rect key="frame" x="0.0" y="171" width="428" height="755"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="miCeldaComplemento" rowHeight="148" id="4cv-QY-6Lm" customClass="CeldaComplemento" customModule="Proyecto_INT" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="148"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4cv-QY-6Lm" id="BRC-xt-kcH">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="arb-jB-rq9">
+                                                    <rect key="frame" x="0.0" y="10" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Complementos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wph-Iw-gbH">
+                                                    <rect key="frame" x="248" y="10" width="180" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyi-QZ-q2p">
+                                                    <rect key="frame" x="333" y="106" width="101" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
+                                                    <connections>
+                                                        <segue destination="2j6-gA-Uxg" kind="push" id="9yk-uL-Wtl"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="miImagen" destination="arb-jB-rq9" id="pgT-9v-udl"/>
+                                            <outlet property="miLabel" destination="wph-Iw-gbH" id="EuM-or-Sir"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vhw-Fv-ScY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="hSy-EL-qjV" id="9Ib-aQ-XWH"/>
+                        <outlet property="txtAniadir" destination="kxc-yJ-AW9" id="FwS-dj-cQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BiU-up-KZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746" y="-1074"/>
+        </scene>
+        <!--Zona Electro-->
+        <scene sceneID="RZs-ZG-2hy">
+            <objects>
+                <viewController storyboardIdentifier="Electro" id="bfh-X1-4ZW" customClass="ZonaElectro" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x4p-Xb-nRn">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Añade nuevos electrodomesticos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXA-2m-1LZ">
+                                <rect key="frame" x="87" y="44" width="254" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nuevo electrodoméstico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kx8-9v-7XJ">
+                                <rect key="frame" x="87" y="73" width="254" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dg-lE-YA8">
+                                <rect key="frame" x="172" y="115" width="85" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Añadir"/>
+                                <connections>
+                                    <action selector="btnAniadir:" destination="bfh-X1-4ZW" eventType="touchUpInside" id="gBt-2G-L8f"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X1Y-nV-jSt">
+                                <rect key="frame" x="0.0" y="164" width="428" height="762"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="miCeldaElectro" rowHeight="151" id="k9Q-F3-bvf" customClass="CeldaElectro" customModule="Proyecto_INT" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="151"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k9Q-F3-bvf" id="lod-ju-3D2" customClass="CeldaElectro" customModule="Proyecto_INT" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="151"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DpX-b9-Blo">
+                                                    <rect key="frame" x="0.0" y="11" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Electrodomésticos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0g-T8-uHW">
+                                                    <rect key="frame" x="248" y="11" width="172" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyx-RI-UPR">
+                                                    <rect key="frame" x="336" y="108" width="101" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
+                                                    <connections>
+                                                        <segue destination="2j6-gA-Uxg" kind="push" id="mA4-ct-mrN"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="miImagen" destination="DpX-b9-Blo" id="ztm-7h-ELU"/>
+                                            <outlet property="miLabel" destination="O0g-T8-uHW" id="CL6-3j-Buj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="twE-M4-EpK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="X1Y-nV-jSt" id="yPs-15-lVf"/>
+                        <outlet property="txtAniadir" destination="kx8-9v-7XJ" id="H8i-Ft-Mzv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEB-oK-R3C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3042" y="-2146"/>
         </scene>
         <!--Zona Componentes-->
         <scene sceneID="x35-kx-eMZ">
@@ -506,7 +680,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQk-Ei-sdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1668.2242990654204" y="-614.25485961123115"/>
+            <point key="canvasLocation" x="-1835" y="-2395"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8ae-VX-LJH">
@@ -531,7 +705,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUs-U8-tal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123.36448598130841" y="-614.25485961123115"/>
+            <point key="canvasLocation" x="-320" y="-1989"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fKl-Gf-kvg">
@@ -621,115 +795,10 @@
             </objects>
             <point key="canvasLocation" x="-5810" y="420"/>
         </scene>
-        <!--Zona Accesorios-->
-        <scene sceneID="fAo-q0-tEj">
-            <objects>
-                <tableViewController storyboardIdentifier="Accesorios Moviles" id="E7Y-0Q-Stj" customClass="ZonaAccesorios" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dV6-2S-sgM">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="miCeldaAccesorio" rowHeight="148" id="Aau-Bq-n1T" customClass="CeldaAccesorios" customModule="Proyecto_INT" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="148"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Aau-Bq-n1T" id="pX1-4g-vEb" customClass="CeldaAccesorios" customModule="Proyecto_INT" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="148"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsp-Yb-FM3">
-                                            <rect key="frame" x="296" y="93" width="80" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="tinted" title="Añadir"/>
-                                        </button>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vrl-TR-4XI">
-                                            <rect key="frame" x="20" y="11" width="133" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accesorio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wz-ep-u4N">
-                                            <rect key="frame" x="169" y="0.0" width="107" height="42"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <accessibility key="accessibilityConfiguration" identifier="miCeldaMovil"/>
-                                <connections>
-                                    <outlet property="miBoton" destination="Dsp-Yb-FM3" id="Xgz-Kf-xGg"/>
-                                    <outlet property="miImagen" destination="vrl-TR-4XI" id="7RL-aJ-WdI"/>
-                                    <outlet property="miLabel" destination="3Wz-ep-u4N" id="Q5m-cR-Mse"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="E7Y-0Q-Stj" id="Rzj-zd-Lep"/>
-                            <outlet property="delegate" destination="E7Y-0Q-Stj" id="sQw-8t-qLK"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="qzt-Ct-fyP"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KcJ-Ng-2vg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1668" y="-1978"/>
-        </scene>
-        <!--Zona Electrodomestico-->
-        <scene sceneID="5zO-ca-ujk">
-            <objects>
-                <tableViewController storyboardIdentifier="Electrodomesticos" id="k2z-Xe-0xr" customClass="ZonaElectrodomestico" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hgi-yV-2O3">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="miCeldaElectrodomestico" rowHeight="148" id="bkI-dc-D4g" customClass="CeldaElectrodomestico" customModule="Proyecto_INT" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="148"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bkI-dc-D4g" id="xSa-DW-oyT" customClass="CeldaAccesorios" customModule="Proyecto_INT" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="148"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqG-sd-HsF">
-                                            <rect key="frame" x="296" y="93" width="80" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="tinted" title="Añadir"/>
-                                        </button>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T7v-tX-HLX">
-                                            <rect key="frame" x="20" y="11" width="133" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Electrodomestico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLP-2x-eno">
-                                            <rect key="frame" x="169" y="0.0" width="169" height="42"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <accessibility key="accessibilityConfiguration" identifier="miCeldaMovil"/>
-                                <connections>
-                                    <outlet property="miBoton" destination="NqG-sd-HsF" id="kKj-0W-LvN"/>
-                                    <outlet property="miImagen" destination="T7v-tX-HLX" id="mKu-Y7-dDk"/>
-                                    <outlet property="miLabel" destination="CLP-2x-eno" id="t09-Tg-FeT"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="k2z-Xe-0xr" id="XxT-FA-ro0"/>
-                            <outlet property="delegate" destination="k2z-Xe-0xr" id="TxR-xB-iyb"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="orO-5s-cdv"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nE2-vZ-7Wf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2841" y="-479"/>
-        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9yk-uL-Wtl"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bag" catalog="system" width="128" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
