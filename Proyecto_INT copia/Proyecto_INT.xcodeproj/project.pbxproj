@@ -21,6 +21,7 @@
 		83DD55C4296FF958007998C2 /* Almacen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD55C3296FF958007998C2 /* Almacen.swift */; };
 		83FC1D14294B4D4800C7D953 /* ZonaAccesorios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC1D13294B4D4800C7D953 /* ZonaAccesorios.swift */; };
 		87199706296EDAE9001B27BB /* ZonaComponentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87199705296EDAE9001B27BB /* ZonaComponentes.swift */; };
+		87239F16298129290075126C /* ZonaPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87239F15298129290075126C /* ZonaPerfil.swift */; };
 		87A8F93B297AA4B300412A9F /* ZonaTelefono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8F93A297AA4B300412A9F /* ZonaTelefono.swift */; };
 		87A8F93D297AA86C00412A9F /* ZonaElectro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8F93C297AA86C00412A9F /* ZonaElectro.swift */; };
 		87A8F93F297AAA4100412A9F /* ZonaComplementos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8F93E297AAA4100412A9F /* ZonaComplementos.swift */; };
@@ -43,6 +44,7 @@
 		83DD55C3296FF958007998C2 /* Almacen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Almacen.swift; sourceTree = "<group>"; };
 		83FC1D13294B4D4800C7D953 /* ZonaAccesorios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaAccesorios.swift; sourceTree = "<group>"; };
 		87199705296EDAE9001B27BB /* ZonaComponentes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaComponentes.swift; sourceTree = "<group>"; };
+		87239F15298129290075126C /* ZonaPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaPerfil.swift; sourceTree = "<group>"; };
 		87A8F93A297AA4B300412A9F /* ZonaTelefono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaTelefono.swift; sourceTree = "<group>"; };
 		87A8F93C297AA86C00412A9F /* ZonaElectro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaElectro.swift; sourceTree = "<group>"; };
 		87A8F93E297AAA4100412A9F /* ZonaComplementos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaComplementos.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				87A8F93C297AA86C00412A9F /* ZonaElectro.swift */,
 				87A8F93A297AA4B300412A9F /* ZonaTelefono.swift */,
 				8321DBFD29127B1C00D4633A /* Login.swift */,
+				87239F15298129290075126C /* ZonaPerfil.swift */,
 				83064C582975649F004FBFE3 /* TabBarController.swift */,
 				8321DBFF291289D500D4633A /* Registro.swift */,
 				83002936291D18B6009E6B3D /* Cesta.swift */,
@@ -178,6 +181,7 @@
 				87A8F93D297AA86C00412A9F /* ZonaElectro.swift in Sources */,
 				83FC1D14294B4D4800C7D953 /* ZonaAccesorios.swift in Sources */,
 				8321DBEA291260B700D4633A /* AppDelegate.swift in Sources */,
+				87239F16298129290075126C /* ZonaPerfil.swift in Sources */,
 				87A8F93F297AAA4100412A9F /* ZonaComplementos.swift in Sources */,
 				83D23407298126F600A1783B /* ZonaCesta.swift in Sources */,
 				87199706296EDAE9001B27BB /* ZonaComponentes.swift in Sources */,

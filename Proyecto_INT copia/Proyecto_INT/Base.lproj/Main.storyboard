@@ -107,13 +107,13 @@
         <!--Perfil-->
         <scene sceneID="q7y-aD-apE">
             <objects>
-                <viewController id="443-GC-pyH" customClass="Perfil" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="443-GC-pyH" customClass="ZonaPerfil" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qUs-hT-fc8">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ldU-Pf-5Pp">
-                                <rect key="frame" x="94" y="163.66666666666652" width="240" height="128"/>
+                                <rect key="frame" x="94" y="164" width="242" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -154,6 +154,13 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Cambiar Vivienda"/>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.10000000000000001" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="zOL-Ie-99K">
+                                <rect key="frame" x="18" y="712" width="378" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="443-GC-pyH" eventType="valueChanged" id="ebk-Yh-FZw"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6g8-pq-1UO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -161,6 +168,10 @@
                     <tabBarItem key="tabBarItem" title="Perfil" image="person.fill" catalog="system" id="q2k-vJ-4lm">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="image" destination="ldU-Pf-5Pp" id="8dm-4F-QiD"/>
+                        <outlet property="slider" destination="zOL-Ie-99K" id="7Tc-8c-c0z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cB-MM-YNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -904,9 +915,9 @@
         <segue reference="tHE-Yh-HI5"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="bag" catalog="system" width="128" height="128"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="bag" catalog="system" width="32" height="32"/>
+        <image name="person" catalog="system" width="32" height="32"/>
+        <image name="person.fill" catalog="system" width="32" height="32"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
