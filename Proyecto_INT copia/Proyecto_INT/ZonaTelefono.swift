@@ -161,6 +161,5 @@ class ZonaTelefono: UIViewController, UITableViewDelegate, UITableViewDataSource
 
 }
 class CeldaTelefono: UITableViewCell {
-    @IBOutlet weak var miImagen: UIImageView!
     @IBOutlet weak var miLabel: UILabel!
 }
