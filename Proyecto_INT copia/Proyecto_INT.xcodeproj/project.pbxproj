@@ -10,6 +10,7 @@
 		83002937291D18B6009E6B3D /* Cesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83002936291D18B6009E6B3D /* Cesta.swift */; };
 		83064C592975649F004FBFE3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83064C582975649F004FBFE3 /* TabBarController.swift */; };
 		831301102979361B00E4D47C /* ZonaPCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8313010F2979361B00E4D47C /* ZonaPCVC.swift */; };
+		8319F06F299BECE500779554 /* datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319F06E299BECE500779554 /* datos.swift */; };
 		8321DBEA291260B700D4633A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321DBE9291260B700D4633A /* AppDelegate.swift */; };
 		8321DBEC291260B700D4633A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321DBEB291260B700D4633A /* SceneDelegate.swift */; };
 		8321DBF1291260B700D4633A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8321DBEF291260B700D4633A /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		83002936291D18B6009E6B3D /* Cesta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cesta.swift; sourceTree = "<group>"; };
 		83064C582975649F004FBFE3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8313010F2979361B00E4D47C /* ZonaPCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZonaPCVC.swift; sourceTree = "<group>"; };
+		8319F06E299BECE500779554 /* datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datos.swift; sourceTree = "<group>"; };
 		8321DBE6291260B700D4633A /* Proyecto_INT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto_INT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8321DBE9291260B700D4633A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8321DBEB291260B700D4633A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				87A8F93E297AAA4100412A9F /* ZonaComplementos.swift */,
 				87A8F93C297AA86C00412A9F /* ZonaElectro.swift */,
 				87A8F93A297AA4B300412A9F /* ZonaTelefono.swift */,
+				8319F06E299BECE500779554 /* datos.swift */,
 				8321DBFD29127B1C00D4633A /* Login.swift */,
 				87239F15298129290075126C /* ZonaPerfil.swift */,
 				83064C582975649F004FBFE3 /* TabBarController.swift */,
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87A8F93B297AA4B300412A9F /* ZonaTelefono.swift in Sources */,
+				8319F06F299BECE500779554 /* datos.swift in Sources */,
 				83064C592975649F004FBFE3 /* TabBarController.swift in Sources */,
 				8321DC00291289D500D4633A /* Registro.swift in Sources */,
 				831301102979361B00E4D47C /* ZonaPCVC.swift in Sources */,

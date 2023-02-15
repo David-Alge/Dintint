@@ -180,7 +180,6 @@
         <!--Cesta-->
         <scene sceneID="Iha-wM-9qa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TG1-Js-Vtk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="oyd-me-9Ia" customClass="Cesta" customModule="Proyecto_INT" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KbR-vM-hp4">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
@@ -218,6 +217,7 @@
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TG1-Js-Vtk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3147" y="-316"/>
         </scene>
@@ -313,7 +313,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkP-Ej-UGY">
-                                                    <rect key="frame" x="324" y="107" width="101" height="31"/>
+                                                    <rect key="frame" x="292" y="107" width="116" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
@@ -350,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pN-Yx-8y1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2877" y="-1247"/>
+            <point key="canvasLocation" x="-2878.0373831775701" y="-1247.3002159827215"/>
         </scene>
         <!--Zona Telefono-->
         <scene sceneID="a0J-c1-JFJ">
@@ -397,7 +397,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teU-D5-AkX">
-                                                    <rect key="frame" x="324" y="108" width="101" height="31"/>
+                                                    <rect key="frame" x="292" y="108" width="116" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
@@ -434,7 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPo-BG-20J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1835" y="-1042"/>
+            <point key="canvasLocation" x="-1835.0467289719625" y="-1042.5485961123111"/>
         </scene>
         <!--Zona Complementos-->
         <scene sceneID="PAE-M5-sPI">
@@ -490,7 +490,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyi-QZ-q2p">
-                                                    <rect key="frame" x="333" y="106" width="101" height="31"/>
+                                                    <rect key="frame" x="292" y="106" width="116" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
@@ -518,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BiU-up-KZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746" y="-1074"/>
+            <point key="canvasLocation" x="-747.19626168224295" y="-1074.2980561555075"/>
         </scene>
         <!--Zona Electro-->
         <scene sceneID="RZs-ZG-2hy">
@@ -574,7 +574,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyx-RI-UPR">
-                                                    <rect key="frame" x="336" y="108" width="101" height="31"/>
+                                                    <rect key="frame" x="304" y="108" width="116" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
@@ -602,7 +602,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEB-oK-R3C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3042" y="-2146"/>
+            <point key="canvasLocation" x="-3042.0560747663549" y="-2146.0043196544279"/>
         </scene>
         <!--Zona Componentes-->
         <scene sceneID="x35-kx-eMZ">
@@ -636,7 +636,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPm-Y5-I6P">
-                                                    <rect key="frame" x="310" y="94" width="101" height="31"/>
+                                                    <rect key="frame" x="278" y="105" width="116" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="Ver detalles"/>
@@ -687,7 +687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQk-Ei-sdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1835" y="-2395"/>
+            <point key="canvasLocation" x="-1835.0467289719625" y="-2395.4643628509721"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8ae-VX-LJH">
@@ -912,12 +912,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tHE-Yh-HI5"/>
+        <segue reference="HsD-JO-3Vw"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="bag" catalog="system" width="32" height="32"/>
-        <image name="person" catalog="system" width="32" height="32"/>
-        <image name="person.fill" catalog="system" width="32" height="32"/>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

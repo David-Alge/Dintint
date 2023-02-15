@@ -8,6 +8,10 @@
 import UIKit
 
 class Almacen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
+    
+    var misDatosDecodificados:[ProductData]=[]
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +36,71 @@ class Almacen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
         
         
         
+        
+    }
+    
+    func loadDataFromRemote(){
+        // accedemos a un JSON remoto
+        guard let miUrl = URL(string: "https://jpod.es/commits.json")
+        else{
+            print("No se encuetntra el archivo JSON")
+            return
+        }
+        
+        decodeJSON(url: miUrl)
+
+    }
+    
+    
+    
+    func decodeJSON(url: URL){
+        do{
+            let miDecodificador = JSONDecoder()
+            let misDatos = try Data(contentsOf: url)
+            self.misDatosDecodificados = try miDecodificador.decode([ProductData].self, from: misDatos)
+            
+        }catch {
+            print("Erroraco al decodificar JSON")
+        }
+    }
+    
+    func codeJSON (dataToCode:[ProductData]) -> Data{
+        let miCodificador = JSONEncoder()
+        if let jsonCodificado = try? miCodificador.encode(dataToCode)
+        {
+            if let cadenaJSON = String(data: jsonCodificado, encoding: .utf8){
+                print(cadenaJSON)
+                return jsonCodificado
+            }
+        }
+        return Data()
+    }
+    
+    
+    
+    func getAPI(){
+        //creamos la llamada a la peticion GET
+        let miUrl = URL(string: "https://api.chec.io/v1/")!
+        var miRequest = URLRequest(url: miUrl)
+        
+        let token = "pk_503841a195de9cab99e68a69dac2f4761ab6bb69b3117"
+        miRequest.addValue(token, forHTTPHeaderField: "X-Authentication")
+        
+        //parametrizamos la peticion
+        miRequest.httpMethod = "GET" //GET,POST,PUT
+        miRequest.httpBody = codeJSON(dataToCode: misDatosDecodificados)
+        
+        //lanzamos la peticion
+        let miTarea = URLSession.shared.dataTask(with: miRequest){
+            data, response, error in
+            guard let data = data, error == nil else {
+                print("Erroraco en la llamada")
+                return
+            }
+            print("Respuesta: \(response)")
+
+        }
+        miTarea.resume()
         
     }
     
