@@ -74,8 +74,51 @@ class ZonaElectro: UIViewController, UITableViewDelegate, UITableViewDataSource 
         }
     }
     
-   
-    
+    func deleteMethod(){
+          
+          //creamos la llamada a la peticion
+          let miUrl = URL(string: "https://api.chec.io/v1/products?category_slug=electrodomesticos")!
+          var miRequest = URLRequest(url: miUrl)
+          miRequest.httpMethod = "DELETE"
+
+          
+          let key = "pk_503841a195de9cab99e68a69dac2f4761ab6bb69b3117"
+          miRequest.addValue(key, forHTTPHeaderField: "X-Authorization")
+          
+          let session = URLSession.shared
+          
+          //lanzamos la peticion
+          let task = session.dataTask(with: miRequest) { (data, response, error) in
+                  // Handle the response data
+                  if let error = error {
+                      print("Error: \(error.localizedDescription)")
+                  } else if let httpResponse = response as? HTTPURLResponse {
+                      if httpResponse.statusCode == 200 {
+                          if let responseData = data {
+                              // Process the response data
+                              print ("RESPUESTA: \(response)")
+                              let responseJSON = try? JSONSerialization.jsonObject(with: responseData,options: [])
+                              
+                              if let responseJSON = responseJSON as? [String: Any], let dataArray = responseJSON["data"] {
+                                  self.misDatosDecodificados = dataArray as! [Any]
+                                  
+                                  DispatchQueue.main.async {
+                                      self.tableView.reloadData()
+                                  }
+                              }
+                              
+                          } else {
+                              print("No response data")
+                          }
+                      } else {
+                          print("Error: HTTP status code \(httpResponse.statusCode)")
+                      }
+                  } else {
+                      print("Unexpected response")
+                  }
+              }
+              task.resume()
+      }
     func llamadaAPI2(){
         
         
