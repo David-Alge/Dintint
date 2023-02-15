@@ -7,33 +7,31 @@
 
 import Foundation
 struct ProductData: Codable {
-  
-        
-    let categories: [Category]
-    let id: String
-    let image: Image
-    let name: String
-    let price: Price
+    var categories: [Category]
+    var id: String
+    var image: Image
+    var name: String
+    var price: Price
         struct Category: Codable {
-            let id: String
-            let name: String
-            let slug: String
+            var id: String
+            var name: String
+            var slug: String
         }
         struct Image: Codable {
-            let createdAt: Int
-            let description: String?
-            let fileExtension: String
-            let fileSize: Int
-            let filename: String
-            let id: String
-            let isImage: Bool
-            let updatedAt: Int
-            let url: String
+            var createdAt: Int
+            var description: String?
+            var fileExtension: String
+            var fileSize: Int
+            var filename: String
+            var id: String
+            var isImage: Bool
+            var updatedAt: Int
+            var url: String
         }
         struct Price: Codable {
-            let formatted: String
-            let formattedWithCode: String
-            let formattedWithSymbol: String
+            var formatted: String
+            var formattedWithCode: String
+            var formattedWithSymbol: String
         }
     
     

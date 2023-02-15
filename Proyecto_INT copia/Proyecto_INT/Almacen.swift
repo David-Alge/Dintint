@@ -64,17 +64,6 @@ class Almacen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
         }
     }
     
-    func codeJSON (dataToCode:[ProductData]) -> Data{
-        let miCodificador = JSONEncoder()
-        if let jsonCodificado = try? miCodificador.encode(dataToCode)
-        {
-            if let cadenaJSON = String(data: jsonCodificado, encoding: .utf8){
-                print(cadenaJSON)
-                return jsonCodificado
-            }
-        }
-        return Data()
-    }
     
     
     
@@ -88,7 +77,6 @@ class Almacen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource  {
         
         //parametrizamos la peticion
         miRequest.httpMethod = "GET" //GET,POST,PUT
-        miRequest.httpBody = codeJSON(dataToCode: misDatosDecodificados)
         
         //lanzamos la peticion
         let miTarea = URLSession.shared.dataTask(with: miRequest){
