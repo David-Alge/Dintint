@@ -9,6 +9,8 @@ import UIKit
 
 
 
+
+
 class ZonaTelefono: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var misDatosDecodificados:[Any]=[]
@@ -36,8 +38,44 @@ class ZonaTelefono: UIViewController, UITableViewDelegate, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "miCeldaTelefono", for: indexPath) as! CeldaTelefono
         
         let item = misDatosDecodificados[indexPath.row] as! [String: Any]
+        print(item)
         
+        
+        let precios = item["price"]  as! [String: Any]
+
+        
+        if let priceData = precios as? [String: Any] {
+            if let formattedPrice = priceData["formatted_with_symbol"] as? String {
+                print("Precio")
+                print(formattedPrice)
+                cell.miPrecio.text = formattedPrice
+            }
+        }
+        /*
+        let imagen = item["image"]  as! [String: Any]
+        
+        if let imagenData = imagen as? [String: Any] {
+            if let urlString = imagenData["url"] as? String {
+                print("URL")
+                print(urlString)
+                
+                let url = NSURL(string: urlString)
+                
+                // Fetch the data from the URL
+                let data = try? Data(contentsOf: url as? URL)
+
+                // Convert the data to an image
+                let image = UIImage(data: data!)
+                
+                cell.miImagen.image = image
+               
+            }else{
+                print("URL invalida")
+            }
+        }
+        */
         cell.miImagen.image = UIImage(named:"movil")
+ cell.miImagen.image
 
         cell.miLabel.text = item["name"] as? String
 
@@ -58,22 +96,8 @@ class ZonaTelefono: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     //Zona APi
     
-   
-    func decodeJSON(url:URL) {
-        do{
-            let miDecodificador = JSONDecoder()
-            let misDatos = try Data(contentsOf: url)
-            self.misDatosDecodificados = try miDecodificador.decode([ProductData].self, from: misDatos)
-            
-        }catch {
-            print("Erroraco al decodificar JSON")
-        }
-    }
-    
-   
     
     func llamadaAPI2(){
-        
         
         //creamos la llamada a la peticion
         let miUrl = URL(string: "https://api.chec.io/v1/products?category_slug=moviles")!
@@ -95,16 +119,24 @@ class ZonaTelefono: UIViewController, UITableViewDelegate, UITableViewDataSource
                     if httpResponse.statusCode == 200 {
                         if let responseData = data {
                             // Process the response data
-                            print ("RESPUESTA: \(response)")
-                            let responseJSON = try? JSONSerialization.jsonObject(with: responseData,options: [])
+                            
+                            let responseJSON = try? JSONSerialization.jsonObject(with: responseData,options: .allowFragments)
                             
                             if let responseJSON = responseJSON as? [String: Any], let dataArray = responseJSON["data"] {
                                 self.misDatosDecodificados = dataArray as! [Any]
                                 
+                                
+                                
+        
+                                print(dataArray)
+                                
+                                
                                 DispatchQueue.main.async {
+                                   
                                     self.tableView.reloadData()
                                 }
                             }
+                            
                             
                         } else {
                             print("No response data")
@@ -125,6 +157,7 @@ class ZonaTelefono: UIViewController, UITableViewDelegate, UITableViewDataSource
 }
 class CeldaTelefono: UITableViewCell {
     
+    @IBOutlet weak var miPrecio: UILabel!
     @IBOutlet weak var miImagen: UIImageView!
     @IBOutlet weak var miLabel: UILabel!
 }

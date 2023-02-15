@@ -7,11 +7,13 @@
 
 import Foundation
 struct ProductData: Codable {
+    
     var categories: [Category]
     var id: String
     var image: Image
     var name: String
     var price: Price
+    
         struct Category: Codable {
             var id: String
             var name: String

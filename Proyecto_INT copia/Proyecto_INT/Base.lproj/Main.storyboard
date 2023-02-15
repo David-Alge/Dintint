@@ -383,11 +383,19 @@
                                                     <rect key="frame" x="20" y="11" width="147" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gae-G2-fPy">
+                                                    <rect key="frame" x="198" y="39" width="71" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="miImagen" destination="hZ9-gb-ZDO" id="07E-Vr-0P1"/>
                                             <outlet property="miLabel" destination="cBu-VC-ccg" id="swW-w2-xnF"/>
+                                            <outlet property="miPrecio" destination="Gae-G2-fPy" id="IMh-sL-tJc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -832,7 +840,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9yk-uL-Wtl"/>
+        <segue reference="HsD-JO-3Vw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bag" catalog="system" width="128" height="128"/>
