@@ -118,6 +118,7 @@ class ZonaComponentes: UIViewController, UITableViewDelegate, UITableViewDataSou
 
 }
 class CeldaComponente: UITableViewCell {
+    @IBOutlet weak var miPrecio: UILabel!
     @IBOutlet weak var miImagen: UIImageView!
     @IBOutlet weak var miLabel: UILabel!
 }

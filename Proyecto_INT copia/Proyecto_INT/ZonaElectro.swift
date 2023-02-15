@@ -32,6 +32,17 @@ class ZonaElectro: UIViewController, UITableViewDelegate, UITableViewDataSource 
 
         let item = misDatosDecodificados[indexPath.row] as! [String: Any]
         
+        let precios = item["price"]  as! [String: Any]
+
+        
+        if let priceData = precios as? [String: Any] {
+            if let formattedPrice = priceData["formatted_with_symbol"] as? String {
+                print("Precio")
+                print(formattedPrice)
+                cell.miPrecio.text = formattedPrice
+            }
+        }
+        
         cell.miImagen.image = UIImage(named:"electro")
 
         cell.miLabel.text = item["name"] as? String
@@ -118,6 +129,7 @@ class ZonaElectro: UIViewController, UITableViewDelegate, UITableViewDataSource 
 
 }
 class CeldaElectro: UITableViewCell {
+    @IBOutlet weak var miPrecio: UILabel!
     @IBOutlet weak var miImagen: UIImageView!
     @IBOutlet weak var miLabel: UILabel!
 }

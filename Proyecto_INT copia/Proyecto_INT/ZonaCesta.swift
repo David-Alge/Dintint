@@ -97,17 +97,18 @@ class ZonaCesta: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         cell.miLabel.text = name
         
-        let categoria = item["categories"]  as! [String: Any]
+        
+        let precios = item["price"]  as! [String: Any]
 
-        if let categoriaData = categoria as? [String: Any] {
-            if let name = categoriaData["name"] as? String {
-                print("//////////////")
-
-                print("Categoria")
-                print(name)
-                
+        
+        if let priceData = precios as? [String: Any] {
+            if let formattedPrice = priceData["formatted_with_symbol"] as? String {
+                print("Precio")
+                print(formattedPrice)
+                cell.miPrecio.text = formattedPrice
             }
         }
+
         
                 if name == "Ordenador" {
                     cell.miImagen.image = UIImage(named:"PC")
@@ -190,6 +191,7 @@ class ZonaCesta: UIViewController, UITableViewDelegate, UITableViewDataSource {
 }
 class CeldaCesta: UITableViewCell{
     
+    @IBOutlet weak var miPrecio: UILabel!
     @IBOutlet weak var miImagen: UIImageView!
     @IBOutlet weak var miLabel: UILabel!
     

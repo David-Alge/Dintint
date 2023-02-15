@@ -315,11 +315,20 @@
                                                         <segue destination="2j6-gA-Uxg" kind="push" id="tHE-Yh-HI5"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWo-Ip-EzJ">
+                                                    <rect key="frame" x="263" y="40" width="82" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="PCImage" destination="U6J-aW-KKT" id="Yi9-10-2su"/>
                                             <outlet property="PCLabel" destination="hEt-Nd-rfT" id="Qzu-0N-kkQ"/>
+                                            <outlet property="miPC" destination="xWo-Ip-EzJ" id="jkh-Xd-OS8"/>
+                                            <outlet property="miPrecio" destination="xWo-Ip-EzJ" id="nRA-g6-8Kq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -459,11 +468,19 @@
                                                         <segue destination="2j6-gA-Uxg" kind="push" id="9yk-uL-Wtl"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYS-S6-N5S">
+                                                    <rect key="frame" x="248" y="39" width="116" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="miImagen" destination="arb-jB-rq9" id="pgT-9v-udl"/>
                                             <outlet property="miLabel" destination="wph-Iw-gbH" id="EuM-or-Sir"/>
+                                            <outlet property="miPrecio" destination="hYS-S6-N5S" id="K6Y-bX-fB3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -527,11 +544,19 @@
                                                         <segue destination="2j6-gA-Uxg" kind="push" id="mA4-ct-mrN"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfi-VV-nli">
+                                                    <rect key="frame" x="248" y="40" width="124" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="miImagen" destination="DpX-b9-Blo" id="ztm-7h-ELU"/>
                                             <outlet property="miLabel" destination="O0g-T8-uHW" id="CL6-3j-Buj"/>
+                                            <outlet property="miPrecio" destination="Rfi-VV-nli" id="sEM-dH-GGq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -588,11 +613,19 @@
                                                         <segue destination="2j6-gA-Uxg" kind="push" id="7E0-T5-l7a"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-S0-UIY">
+                                                    <rect key="frame" x="268" y="30" width="93" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="miImagen" destination="TsC-hn-AOy" id="D8W-KI-Cyz"/>
                                             <outlet property="miLabel" destination="MTE-1p-8QH" id="x6s-Z0-0De"/>
+                                            <outlet property="miPrecio" destination="tUZ-S0-UIY" id="5XV-00-L3L"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -694,11 +727,19 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDe-xi-eXW">
+                                                    <rect key="frame" x="220" y="98" width="103" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="miImagen" destination="CwQ-By-z1C" id="CxR-NU-7qT"/>
                                             <outlet property="miLabel" destination="Pfi-M5-dFJ" id="gUx-eK-CQi"/>
+                                            <outlet property="miPrecio" destination="iDe-xi-eXW" id="ygj-tn-vz5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -840,7 +881,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HsD-JO-3Vw"/>
+        <segue reference="mA4-ct-mrN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bag" catalog="system" width="128" height="128"/>

@@ -34,9 +34,21 @@ class ZonaPCVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
         let item = misDatosDecodificados[indexPath.row] as! [String: Any]
         
+        let precios = item["price"]  as! [String: Any]
+
+        
+        if let priceData = precios as? [String: Any] {
+            if let formattedPrice = priceData["formatted_with_symbol"] as? String {
+                print("Precio")
+                print(formattedPrice)
+                cell.miPrecio.text = formattedPrice
+            }
+        }
+        
         cell.PCImage.image = UIImage(named:"PC")
 
         cell.PCLabel.text = item["name"] as? String
+        
 
         return cell
     }
@@ -119,6 +131,8 @@ class ZonaPCVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
 }
 class CeldaOrdenadores: UITableViewCell{
+    @IBOutlet weak var miPrecio: UILabel!
+    @IBOutlet weak var miPC: UILabel!
     @IBOutlet weak var PCLabel: UILabel!
     @IBOutlet weak var PCImage: UIImageView!
 }
